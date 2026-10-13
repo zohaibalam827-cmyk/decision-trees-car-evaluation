@@ -3,6 +3,7 @@ from dataclasses import dataclass, field
 from typing import Any, Dict, Optional
 
 import numpy as np
+import pandas as pd
 
 
 # ---------------------------------------------------------------- Part A: impurity
@@ -74,9 +75,6 @@ class Node:
 
 
 # ---------------------------------------------------------------- Part C1: training side
-import pandas as pd
-
-
 class BaseDecisionTree:
     """Common logic. ID3, C4.5 and CART only have to write their own _build()."""
 
